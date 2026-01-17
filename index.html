@@ -604,6 +604,66 @@ body {
     background: rgba(255, 255, 255, 0.92) !important;
     border: 2px solid rgba(255,255,255,0.5) !important;
 }
+        /* Добавьте в CSS в конце */
+.detail-title {
+    font-family: 'Bangers', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 3rem auto 2rem;
+    padding: 25px 40px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* Обводка текста */
+    color: white;
+    text-shadow: 
+        /* Многослойная обводка для четкости */
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000,
+        0px 2px 0 #000,
+        0px -2px 0 #000,
+        2px 0px 0 #000,
+        -2px 0px 0 #000,
+        
+        /* Внешнее свечение */
+        0 0 20px rgba(0,0,0,0.5),
+        0 0 40px rgba(156, 39, 176, 0.3);
+    
+    /* Фон для надписи */
+    background: linear-gradient(135deg, 
+        rgba(141, 110, 99, 0.9), 
+        rgba(33, 150, 243, 0.9), 
+        rgba(244, 67, 54, 0.9), 
+        rgba(3, 169, 244, 0.9));
+    
+    border-radius: 25px;
+    border: 5px solid white;
+    box-shadow: 
+        0 15px 35px rgba(0,0,0,0.4),
+        inset 0 0 30px rgba(255,255,255,0.3);
+    
+    /* Анимация */
+    animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+    0% {
+        box-shadow: 
+            0 15px 35px rgba(0,0,0,0.4),
+            inset 0 0 30px rgba(255,255,255,0.3),
+            0 0 30px rgba(33, 150, 243, 0.5);
+    }
+    100% {
+        box-shadow: 
+            0 15px 35px rgba(0,0,0,0.4),
+            inset 0 0 30px rgba(255,255,255,0.3),
+            0 0 50px rgba(244, 67, 54, 0.7);
+    }
+}
         /* === ФИКС MAC СНИЗУ === */
 
 /* Вернуть иконки */
