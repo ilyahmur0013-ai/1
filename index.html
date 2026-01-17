@@ -588,6 +588,22 @@
                 margin: 2rem 20px;
             }
         }
+/* ===== ЧЕТКИЙ ФОН ===== */
+
+body::before {
+    background: rgba(255, 255, 255, 0) !important;  /* Убрать белую подложку */
+    backdrop-filter: none !important;  /* Убрать размытие */
+}
+
+/* Усилить контраст текста */
+body {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5) !important;
+}
+
+.code-card, .quiz-section, .hero-text {
+    background: rgba(255, 255, 255, 0.92) !important;
+    border: 2px solid rgba(255,255,255,0.5) !important;
+}
         /* === ФИКС MAC СНИЗУ === */
 
 /* Вернуть иконки */
